@@ -14,6 +14,9 @@
 #include <iostream>
 #include <Windows.h>
 
+constexpr int WINDOW_X = 480;
+constexpr int WINDOW_Y = 200;
+
 namespace W
 {
 	static LPDIRECT3D9              g_pD3D = NULL;
@@ -28,6 +31,5 @@ namespace W
 	void window();
 	void renderstuff(HWND hwnd);
 	void MakeStyle();
-	void renderDockWindow();
 }
 #endif
